@@ -1,0 +1,33 @@
+body{
+    font-family: "Mona Sans",;
+}
+nav{
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: black;
+}
+a:hover{
+    color: #C0C0C0;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 700;
+}
+.pink{
+    color: #D14691;
+}
+.login{
+    border: 1.5px solid #D14691;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
