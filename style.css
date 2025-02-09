@@ -1,97 +1,152 @@
-body{
-    font-family: "Mona Sans",;
+body {
+  font-family: "Mona Sans";
 }
-nav{
-    padding: 20px;
-    border-bottom: 1px solid #eaeaea;
-    display: flex;
-    align-items: center;
+nav {
+  padding: 20px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
 }
-nav a{
-    font-size: 14px;
+nav a {
+  font-size: 14px;
 }
-a{
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 20px;
-    color: black;
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 20px;
+  color: black;
 }
-a:hover{
-    color: #C0C0C0;
+a:hover {
+  color: #c0c0c0;
 }
-.logo{
-    font-size: 32px;
-    font-weight: 700;
+.logo {
+  font-size: 32px;
+  font-weight: 700;
 }
-.pink{
-    color: #D14691;
+.pink {
+  color: #d14691;
 }
-.login{
-    border: 1.5px solid #D14691;
-    padding: 10px 20px;
-    border-radius: 20px;
+.login {
+  border: 1.5px solid #d14691;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
-.leading{
-    margin-top: 80px;
-    text-align: center;
+.leading {
+  margin-top: 80px;
+  text-align: center;
 }
-.leading h1{
-    font-size: 45px;
+.leading h1 {
+  font-size: 45px;
 }
-.leading p{
-    width: 36%;
-    margin: 30px auto;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
+.leading p {
+  width: 36%;
+  margin: 30px auto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
 }
-.leading a{
-    background: #D14691;
-    color: white;
-    padding: 10px 40px;
-    border-radius: 20px;
+.leading a {
+  background: #d14691;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
 }
-.cards{
-    margin: 80px 0;
-    display: flex;
-    justify-content: space-around;
-    
+.cards {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-around;
 }
-.card{
-    height: 250px;
-    width: 300px;
-    background-color: gray;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 0 30px;
-    position: relative;
+.card {
+  height: 250px;
+  width: 300px;
+  background-color: gray;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 30px;
+  position: relative;
 }
-.card div{
-    display: flex;
+.card div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.card div p {
+  font-size: 24px;
+}
+.card > p {
+  color: #c0c0c0;
+}
+.card:nth-child(1) {
+  background-color: #613c75;
+}
+.card:nth-child(2) {
+  background-color: #536273;
+}
+.card:nth-child(3) {
+  background-color: #a38d8d;
+}
+.card:nth-child(4) {
+  background-color: #80a49b;
+}
+.card > img {
+  position: absolute;
+  bottom: -40px;
+  right: -30px;
+}
+.menu_icon {
+  display: none;
+  cursor: pointer;
+}
+/* only devices betwee  0 and 600px */
+@media only screen and (max-width: 768px) {
+  nav a:not(:first-child) {
+    display: none;
+  }
+  .menu_icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+  nav {
     justify-content: space-between;
-    color: white;
+  }
+  .mobile_nav {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    display: none;
+    left: 0;
+    right: 0;
+  }
+
+  .mobile_nav a {
+    padding: 10px;
+  }
 }
-.card div p{
-    font-size: 24px;
-    
+/* only devices between 0 and 600px */
+@media only screen and (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 30px;
+  }
+  .leading h1 {
+    font-size: 10vw;
+  }
+  .leading p {
+    font-size: 3vw;
+  }
 }
-.card > p{
-    color: #C0C0C0;
-}
-.card:nth-child(1){
-    background-color: #613C75;
-}
-.card:nth-child(2){
-    background-color: #536273;
-}
-.card:nth-child(3){
-    background-color: #A38D8D;
-}
-.card:nth-child(4){
-    background-color: #80A49B;
-}
-.card >img{
-    position: absolute;
-    bottom: -40px;
-    right: -30px;
+/* only devices above 600px */
+@media only screen and (min-width: 600px) {
+  .cards {
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
 }

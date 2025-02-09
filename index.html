@@ -3,30 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Journal</title>
   </head>
   <body>
     <header>
       <nav>
         <a class="logo pink" href="/index.html">Journal</a>
-        <a style="margin-left: auto;" href="/index.html">Home</a>
+        <a style="margin-left: auto" href="/index.html">Home</a>
         <a href="#">About</a>
         <a href="#">Features</a>
         <a href="#">Docs</a>
         <a href="#">Pricing</a>
-        <a style="margin-left: auto;" class="pink" href="register.html">Register</a>
+        <a style="margin-left: auto" class="pink" href="register.html"
+          >Register</a
+        >
         <a href="#" class="pink login">Login</a>
+        <svg
+          class="menu_icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
       </nav>
+      <!--mobile view-->
+      <div class="mobile_nav">
+        <a href="/index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Docs</a>
+        <a href="#">Pricing</a>
+        <a class="" href="register.html">Register</a>
+        <a href="#" class="">Login</a>
+      </div>
     </header>
     <main>
       <!-- leading section -->
       <section class="leading">
-        <h1>Write your daily journal and <br> read them in exciting way</h1>
+        <h1>
+          Write your daily journal and <br />
+          read them in exciting way
+        </h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos esse
           nobis consequuntur ab quam voluptatum in ipsum voluptas facere
@@ -42,7 +75,10 @@
       <section class="cards">
         <div class="card">
           <div>
-              <p>Cycling and <br> enjoy the city <br>view</p>
+            <p>
+              Cycling and <br />
+              enjoy the city <br />view
+            </p>
             <svg
               height="20"
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +104,11 @@
         </div>
         <div class="card">
           <div>
-              <p>Street <br> Photography <br> Journal</p>
+            <p>
+              Street <br />
+              Photography <br />
+              Journal
+            </p>
             <svg
               height="20"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,24 +135,28 @@
         </div>
         <div class="card">
           <div>
-           <div>
-            <p>My first trip <br> with my <br> partner</p>
-            <svg
-              height="20"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="{1.5}"
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-              />
-            </svg>
-           </div>
+            <div>
+              <p>
+                My first trip <br />
+                with my <br />
+                partner
+              </p>
+              <svg
+                height="20"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </div>
           </div>
 
           <p>2 days ago</p>
@@ -124,7 +168,11 @@
         </div>
         <div class="card">
           <div>
-            <p>First day at <br> office, very <br> nervous</p>
+            <p>
+              First day at <br />
+              office, very <br />
+              nervous
+            </p>
             <svg
               height="20"
               xmlns="http://www.w3.org/2000/svg"
@@ -151,5 +199,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
